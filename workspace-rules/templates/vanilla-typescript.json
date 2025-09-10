@@ -1,0 +1,35 @@
+{
+  "name": "Vanilla TypeScript Project",
+  "description": "Basic TypeScript project setup without React",
+  "files": {
+    ".eslintrc.json": {
+      "source": "../eslint/base.json",
+      "merge": ["../eslint/import-rules.json"]
+    },
+    ".prettierrc.json": {
+      "source": "../prettier/base.json"
+    },
+    "tsconfig.json": {
+      "source": "../typescript/base.json"
+    },
+    ".vscode/settings.json": {
+      "source": "../vscode/base-settings.json"
+    }
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "devDependencies": [
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "eslint-config-prettier",
+      "eslint-plugin-import",
+      "prettier"
+    ]
+  }
+}
