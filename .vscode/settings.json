@@ -1,0 +1,34 @@
+{
+  "codeium.enableCodeLens": true,
+  "codeium.enableTabCompletion": true,
+  "codeium.enableInlineCompletion": true,
+  "codeium.enableChatMode": true,
+  
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript", 
+    "typescriptreact"
+  ],
+  
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  
+  "files.associations": {
+    ".codeiumconfig": "ini",
+    ".codeium/prompts.json": "json",
+    ".codeium/config.json": "json"
+  }
+}

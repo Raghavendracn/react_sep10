@@ -76,7 +76,7 @@ const App: React.FC = () => {
       },
     },
   });
-debugger;
+
   const handleThemeToggle = (): void => {
     setDarkMode(!darkMode);
   };
