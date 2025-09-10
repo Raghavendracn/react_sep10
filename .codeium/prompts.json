@@ -1,0 +1,45 @@
+{
+  "systemPrompts": [
+    "You are a code assistant that enforces strict coding standards.",
+    "Always suggest code that follows ESLint rules: no-console, no-debugger, prefer-const, no-var.",
+    "When suggesting code, use single quotes, semicolons, and 2-space indentation.",
+    "If you see rule violations, suggest fixes immediately.",
+    "Prioritize code quality and maintainability in all suggestions.",
+    "For React components, prefer functional components with TypeScript interfaces.",
+    "Use Material-UI (MUI) components following the project's established patterns.",
+    "Never suggest console.log for debugging - recommend proper logging or breakpoints instead."
+  ],
+  "codeReviewPrompts": [
+    "Review this code for ESLint rule violations",
+    "Check for console.log or debugger statements",
+    "Ensure proper variable declarations (const/let vs var)",
+    "Verify code follows team coding standards",
+    "Look for React hooks violations",
+    "Check TypeScript type safety",
+    "Validate MUI component usage patterns"
+  ],
+  "fixPrompts": [
+    "Fix ESLint violations in this code",
+    "Remove console and debugger statements",
+    "Convert var to const/let appropriately",
+    "Apply consistent code formatting",
+    "Add proper TypeScript types",
+    "Refactor to use React hooks correctly",
+    "Update to use MUI components properly"
+  ],
+  "explanationPrompts": [
+    "Explain why console.log should not be used in production code",
+    "Describe the benefits of using const over var",
+    "Explain React hooks rules and best practices",
+    "Clarify TypeScript interface vs type usage",
+    "Detail MUI theming and component patterns"
+  ],
+  "chatCommands": [
+    "/fix-eslint: Fix all ESLint violations in the current file",
+    "/review-code: Perform a comprehensive code review",
+    "/explain-rule [rule]: Explain why a specific ESLint rule exists",
+    "/convert-var: Convert all var declarations to const/let",
+    "/remove-console: Remove all console statements",
+    "/add-types: Add missing TypeScript types"
+  ]
+}

@@ -1,0 +1,60 @@
+# Codeium Global Configuration
+# This file configures AI-powered rule enforcement for the entire project
+
+[general]
+language = "typescript"
+framework = "react"
+enable_completions = true
+enable_chat = true
+enable_explanations = true
+
+[code_style]
+enforce_eslint = true
+preferred_quotes = "single"
+semicolons = "always"
+indentation = "2spaces"
+max_line_length = 80
+trailing_commas = "es5"
+
+[rules]
+# Critical Rules - Block violations
+no_console = "error"
+no_debugger = "error"
+no_var = "error"
+
+# Best Practice Rules - Warn about violations
+prefer_const = "warning"
+no_unused_vars = "warning"
+no_empty_function = "warning"
+
+# Code Quality Rules
+eqeqeq = "warning"
+no_magic_numbers = "warning"
+camelcase = "warning"
+
+[suggestions]
+auto_suggest_fixes = true
+show_rule_violations = true
+context_aware_help = true
+explain_violations = true
+
+[react_patterns]
+prefer_functional_components = true
+enforce_hooks_rules = true
+prefer_typescript_interfaces = true
+no_inline_styles = "warning"
+
+[security]
+no_eval = "error"
+no_implied_eval = "error"
+no_new_func = "error"
+
+[performance]
+no_loop_func = "warning"
+no_inner_declarations = "warning"
+
+[messages]
+no_console_message = "Console statements not allowed in production code. Use proper logging instead."
+no_debugger_message = "Debugger statements must be removed before commit. Use breakpoints in development."
+prefer_const_message = "Use 'const' for variables that don't change to improve code clarity."
+no_var_message = "Use 'let' or 'const' instead of 'var' for better scoping."

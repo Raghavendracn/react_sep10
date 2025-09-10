@@ -1,0 +1,41 @@
+{
+  "enableCodeCompletion": true,
+  "enableInlineChat": true,
+  "enableExplainCode": true,
+  "language": "typescript",
+  "framework": "react",
+  "codeStyle": {
+    "enforceESLint": true,
+    "preferredQuotes": "single",
+    "semicolons": "always",
+    "indentation": "2spaces",
+    "maxLineLength": 80
+  },
+  "rules": {
+    "noConsole": {
+      "enabled": true,
+      "severity": "error",
+      "message": "Console statements not allowed in production code"
+    },
+    "noDebugger": {
+      "enabled": true,
+      "severity": "error", 
+      "message": "Debugger statements must be removed before commit"
+    },
+    "preferConst": {
+      "enabled": true,
+      "severity": "warning",
+      "message": "Use const for variables that don't change"
+    },
+    "noVar": {
+      "enabled": true,
+      "severity": "error",
+      "message": "Use let or const instead of var"
+    }
+  },
+  "suggestions": {
+    "autoSuggestFixes": true,
+    "showRuleViolations": true,
+    "contextAwareHelp": true
+  }
+}
