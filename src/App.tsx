@@ -1,47 +1,47 @@
-import React, { useState } from 'react';
 import {
-  ThemeProvider,
-  createTheme,
-  CssBaseline,
-  AppBar,
-  Toolbar,
-  Typography,
-  Container,
-  Grid,
-  Card,
-  CardContent,
-  CardActions,
-  Button,
-  TextField,
-  Switch,
-  FormControlLabel,
-  Box,
-  Chip,
-  Avatar,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemAvatar,
-  Divider,
-  Paper,
-  IconButton,
-  Fab,
-  Snackbar,
-  Alert
-} from '@mui/material';
-import {
-  Person,
-  Email,
-  Phone,
   Add,
+  DarkMode,
   Delete,
   Edit,
+  Email,
   Favorite,
-  Share,
+  LightMode,
   MoreVert,
-  DarkMode,
-  LightMode
+  Person,
+  Phone,
+  Share
 } from '@mui/icons-material';
+import {
+  Alert,
+  AppBar,
+  Avatar,
+  Box,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  Chip,
+  Container,
+  createTheme,
+  CssBaseline,
+  Divider,
+  Fab,
+  FormControlLabel,
+  Grid,
+  IconButton,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemText,
+  Paper,
+  Snackbar,
+  Switch,
+  TextField,
+  ThemeProvider,
+  Toolbar,
+  Typography
+} from '@mui/material';
+import React, { useState } from 'react';
 
 interface Contact {
   id: number;
@@ -76,7 +76,7 @@ const App: React.FC = () => {
       },
     },
   });
-
+debugger;
   const handleThemeToggle = (): void => {
     setDarkMode(!darkMode);
   };
